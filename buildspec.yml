@@ -1,0 +1,22 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 18
+    commands:
+      - echo "No build dependencies for this static sample app."
+  build:
+    commands:
+      - echo "Build phase - nothing to compile for a static HTML app."
+      - echo "Build started on $(date)"
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+
+artifacts:
+  files:
+    - index.html
+    - appspec.yml
+    - scripts/**/*
+  discard-paths: no

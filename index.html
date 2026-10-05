@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AWS CI/CD Sample App</title>
+  <style>
+    body {
+      font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #0f1b33;
+      color: #f2f5fa;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: #152647;
+      border: 1px solid #2e4a7d;
+      border-radius: 12px;
+      padding: 40px 56px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    h1 { color: #6fa8ff; margin-bottom: 8px; }
+    p { color: #b7c6e6; margin: 4px 0; }
+    .tag {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 4px 12px;
+      background: #1f3864;
+      border-radius: 999px;
+      font-size: 13px;
+      color: #9cc4ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Deployed via AWS CodePipeline</h1>
+    <p>Source: GitHub &rarr; CodeBuild &rarr; CodeDeploy &rarr; EC2</p>
+    <p id="deploy-marker">Build version: v1</p>
+    <span class="tag">Row 21 &mdash; Presales Intern Task Tracker</span>
+  </div>
+</body>
+</html>
